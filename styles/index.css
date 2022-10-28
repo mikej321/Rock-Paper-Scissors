@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 3rem;
+  background-color: gray;
+  color: white;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, 100px);
+  place-items: stretch stretch;
+  align-content: center;
+  text-align: center;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item1 {
+  background: blue;
+}
+
+
+
+.item2 {
+  background: red;
+}
+
+.item3 {
+  background: green;
+}
